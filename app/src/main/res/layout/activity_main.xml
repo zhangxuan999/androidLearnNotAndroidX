@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textStyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="client_id:" />
+
+            <EditText
+                android:id="@+id/client_id"
+                style="@style/textStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:hint="请输入client_id">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textStyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="oaid:" />
+
+            <TextView
+                android:id="@+id/oaid_value"
+                style="@style/textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:focusable="true"
+                android:longClickable="true"
+                android:text="oaid"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textStyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/imei_value"
+                android:text="imei:" />
+
+            <TextView
+                android:id="@+id/imei_value"
+                style="@style/textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:focusable="true"
+                android:longClickable="true"
+                android:text="imei"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textStyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/imei_value"
+                android:text="umid:" />
+
+            <TextView
+                android:id="@+id/uid_value"
+                style="@style/textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:focusable="true"
+                android:longClickable="true"
+                android:text="umid"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textStyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/imei_value"
+                android:text="googleADID:" />
+
+            <TextView
+                android:id="@+id/googldid_value"
+                style="@style/textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:focusable="true"
+                android:longClickable="true"
+                android:text="googldid"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/startOrEnd"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/start_test" />
+
+        <Button
+            android:id="@+id/check_result"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/check_result"
+           />
+    </LinearLayout>
+
+
+</RelativeLayout>

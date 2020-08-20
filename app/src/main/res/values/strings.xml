@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ups 打点测试工具</string>
+    <string name="start_test">开始</string>
+    <string name="check_result">查看结果</string>
+</resources>
