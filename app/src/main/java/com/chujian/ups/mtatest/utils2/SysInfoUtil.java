@@ -197,7 +197,6 @@ public class SysInfoUtil {
 		phoneInfo += ", ID: " + Build.ID;
 		phoneInfo += ", MANUFACTURER: " + Build.MANUFACTURER;
 		phoneInfo += ", USER: " + Build.USER;
-		phoneInfo += ", VN: " + CjSdkVersion.version;
 		return phoneInfo;
 	}
 	/**
